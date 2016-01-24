@@ -5,16 +5,16 @@ public class Car {
         private Track track = null;
 
         public Track getTrack() {return track;}
-       // метод прикрепления прицепа
+       // РјРµС‚РѕРґ РїСЂРёРєСЂРµРїР»РµРЅРёСЏ РїСЂРёС†РµРїР°
         public  void setTrack(Track tr)
         {
             if (this.track == null && tr.getCar() == null)
                 this.track = tr;
             else
-                System.out.println("У машины или прицепа уже есть владелец");
+                System.out.println("РЈ РјР°С€РёРЅС‹ РёР»Рё РїСЂРёС†РµРїР° СѓР¶Рµ РµСЃС‚СЊ РІР»Р°РґРµР»РµС†");
         }
 
-        // метод открепления прицепа
+        // РјРµС‚РѕРґ РѕС‚РєСЂРµРїР»РµРЅРёСЏ РїСЂРёС†РµРїР°
         public void unSetTrack()
         {
             if(track.getCar() != null && this.getTrack() != null)
@@ -25,10 +25,10 @@ public class Car {
         private String number;
         int countHuman =0;
         private String color;
-        int status; // статус машины
-        // 0 - стоит
-        // 1 - заведен
-        // 2 - едет
+        int status; // СЃС‚Р°С‚СѓСЃ РјР°С€РёРЅС‹
+        // 0 - СЃС‚РѕРёС‚
+        // 1 - Р·Р°РІРµРґРµРЅ
+        // 2 - РµРґРµС‚
         String s;
 
         public Car() {}
@@ -61,16 +61,16 @@ public class Car {
         {
             if (status == 0){
                 status = 1;
-                s = "Я авто с номером: " + this.number +" успещно завелось";
+                s = "РЇ Р°РІС‚Рѕ СЃ РЅРѕРјРµСЂРѕРј: " + this.number +" СѓСЃРїРµС‰РЅРѕ Р·Р°РІРµР»РѕСЃСЊ";
                 System.out.println(s);
             }
             else if (status == 1){
-                s = "Я авто с номером: " + this.number +" Не могу завестись, так как уже заведено";
+                s = "РЇ Р°РІС‚Рѕ СЃ РЅРѕРјРµСЂРѕРј: " + this.number +" РќРµ РјРѕРіСѓ Р·Р°РІРµСЃС‚РёСЃСЊ, С‚Р°Рє РєР°Рє СѓР¶Рµ Р·Р°РІРµРґРµРЅРѕ";
                 System.out.println(s);
             }
             else
             {
-                s = ("Я авто с номером: " + this.number + " не могу завестись повтроно, так как уже еду");
+                s = ("РЇ Р°РІС‚Рѕ СЃ РЅРѕРјРµСЂРѕРј: " + this.number + " РЅРµ РјРѕРіСѓ Р·Р°РІРµСЃС‚РёСЃСЊ РїРѕРІС‚СЂРѕРЅРѕ, С‚Р°Рє РєР°Рє СѓР¶Рµ РµРґСѓ");
                 System.out.println(s);
             }
 
@@ -79,11 +79,11 @@ public class Car {
         {
             if (status == 0)
             {
-                s = "Я авто с номером: " + this.number + " не могу ехать, так как не завелось";
+                s = "РЇ Р°РІС‚Рѕ СЃ РЅРѕРјРµСЂРѕРј: " + this.number + " РЅРµ РјРѕРіСѓ РµС…Р°С‚СЊ, С‚Р°Рє РєР°Рє РЅРµ Р·Р°РІРµР»РѕСЃСЊ";
                 System.out.println(s);
             }else if (status == 1){
                 status = 2;
-                s = "Я авто с номером: " + this.number + " успещно поехало";
+                s = "РЇ Р°РІС‚Рѕ СЃ РЅРѕРјРµСЂРѕРј: " + this.number + " СѓСЃРїРµС‰РЅРѕ РїРѕРµС…Р°Р»Рѕ";
                 System.out.println(s);
                 try{
                     if(track.getCar() != null && this.getTrack() != null)
@@ -94,7 +94,7 @@ public class Car {
 
                 }
             } else {
-                s = "Я авто с номером: " + this.number + " не могу поехать, так как уже еду";
+                s = "РЇ Р°РІС‚Рѕ СЃ РЅРѕРјРµСЂРѕРј: " + this.number + " РЅРµ РјРѕРіСѓ РїРѕРµС…Р°С‚СЊ, С‚Р°Рє РєР°Рє СѓР¶Рµ РµРґСѓ";
                 System.out.println(s);
             }
         }
@@ -103,14 +103,14 @@ public class Car {
         {
             if (status == 0)
             {
-                s = "Я авто с номером: " + this.number + " не могу остановиться, так как и так стою";
+                s = "РЇ Р°РІС‚Рѕ СЃ РЅРѕРјРµСЂРѕРј: " + this.number + " РЅРµ РјРѕРіСѓ РѕСЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ, С‚Р°Рє РєР°Рє Рё С‚Р°Рє СЃС‚РѕСЋ";
                 System.out.println(s);
             }else if (status == 1){
-                s = "Я авто с номером: " + this.number + " не могу остановиться, так как завелось но еще стою";
+                s = "РЇ Р°РІС‚Рѕ СЃ РЅРѕРјРµСЂРѕРј: " + this.number + " РЅРµ РјРѕРіСѓ РѕСЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ, С‚Р°Рє РєР°Рє Р·Р°РІРµР»РѕСЃСЊ РЅРѕ РµС‰Рµ СЃС‚РѕСЋ";
                 System.out.println(s);
             } else {
                 status = 0;
-                s = "Я авто с номером: " + this.number + " успешно остановилось";
+                s = "РЇ Р°РІС‚Рѕ СЃ РЅРѕРјРµСЂРѕРј: " + this.number + " СѓСЃРїРµС€РЅРѕ РѕСЃС‚Р°РЅРѕРІРёР»РѕСЃСЊ";
                 System.out.println(s);
                 try{
                     if(track.getCar() != null && this.getTrack() != null)
