@@ -1,9 +1,7 @@
-/**
- * Created by Andrew on 24.01.2016.
- */
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class AutoSalon {
-    import java.util.ArrayList;
-    import java.util.Scanner;
 
     /**
      * 1. Добавить новый автомобиль
@@ -46,8 +44,6 @@ public class AutoSalon {
      }
      */
 
-    public  class AutoSalon
-    {
         public static void main (String ... args)
         {
             AutoSalon autoSalon = new AutoSalon();
@@ -341,4 +337,4 @@ public  class AutoSalon
 }
 
 */
-}
+
