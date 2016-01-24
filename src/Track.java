@@ -4,7 +4,7 @@ public class Track {
         private  Car car = null;
         private String number;
         private int status = 0;
-        // статус прицепа: 0 - стою  1 - качусь
+        // СЃС‚Р°С‚СѓСЃ РїСЂРёС†РµРїР°: 0 - СЃС‚РѕСЋ  1 - РєР°С‡СѓСЃСЊ
 
         public Car getCar() {return car;}
         public void setCar(Car car) {this.car = car;}
@@ -22,19 +22,19 @@ public class Track {
         {
             if (status == 1)
             {
-                System.out.println("Я прицеп, номер " + this.getNumber() + " остановился");
+                System.out.println("РЇ РїСЂРёС†РµРї, РЅРѕРјРµСЂ " + this.getNumber() + " РѕСЃС‚Р°РЅРѕРІРёР»СЃСЏ");
                 status = 0;
             } else
-                System.out.println("Я прицеп, номер " + this.getNumber() + " не могу остановиться, так как и так стою");
+                System.out.println("РЇ РїСЂРёС†РµРї, РЅРѕРјРµСЂ " + this.getNumber() + " РЅРµ РјРѕРіСѓ РѕСЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ, С‚Р°Рє РєР°Рє Рё С‚Р°Рє СЃС‚РѕСЋ");
         }
         public void roll()
         {
             if (status == 0)
             {
-                System.out.println("Я прицеп, номер " + this.getNumber() + " качусь");
+                System.out.println("РЇ РїСЂРёС†РµРї, РЅРѕРјРµСЂ " + this.getNumber() + " РєР°С‡СѓСЃСЊ");
                 status = 1;
             } else
-                System.out.println("Я прицеп, номер " + this.getNumber() + " не мог покатиться, так как и так двигаюсь");
+                System.out.println("РЇ РїСЂРёС†РµРї, РЅРѕРјРµСЂ " + this.getNumber() + " РЅРµ РјРѕРі РїРѕРєР°С‚РёС‚СЊСЃСЏ, С‚Р°Рє РєР°Рє Рё С‚Р°Рє РґРІРёРіР°СЋСЃСЊ");
         }
     }
 
