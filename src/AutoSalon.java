@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AutoSalon {
-    
+
         private ArrayList<Car> carList = new ArrayList<Car>();
         private ArrayList<Track> trackList = new ArrayList<Track>();
 
@@ -125,11 +125,6 @@ public class AutoSalon {
                 int indexCar = scanner.nextInt();
                 System.out.println("Введите индекс прицепа: ");
                 int indexTrack = scanner.nextInt();
-                // scanner.close();
-                /*if (indexCar < 0 || indexTrack < 0)
-                    System.out.println("Exception");
-                if (indexCar > listCar.size() || indexTrack > listTrack.size())
-                    System.out.println("Exception");*/
                 listCar.get(indexCar).setTrack(listTrack.get(indexTrack));
                 listTrack.get(indexTrack).setCar(listCar.get(indexCar));
                 System.out.println("Прицеп прикреплен к машине");
