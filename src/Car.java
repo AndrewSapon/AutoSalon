@@ -1,7 +1,5 @@
 
-/**
- * Created by Andrew on 27.12.2015.
- */
+
 public class Car {
 
         private Track track = null;
