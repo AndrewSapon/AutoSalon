@@ -33,12 +33,6 @@ public class AutoSalon {
      При попытке вызвать метод stop для авто, вызвается метод stop для прицепа.
      */
 
-        public static void main (String ... args)
-        {
-            AutoSalon autoSalon = new AutoSalon();
-            autoSalon.start();
-        }
-
         private ArrayList<Car> carList = new ArrayList<Car>();
         private ArrayList<Track> trackList = new ArrayList<Track>();
 
