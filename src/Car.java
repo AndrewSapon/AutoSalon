@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  * Created by Andrew on 24.01.2016.
  */
@@ -5,8 +8,6 @@ public class Car {
     /**
      * Created by Andrew on 27.12.2015.
      */
-    public class Car
-    {
         private Track track = null;
 
 
@@ -606,4 +607,4 @@ public static void addCars(ArrayList<Car> list){    // 1
 
 */
 
-}
+
