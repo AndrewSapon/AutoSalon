@@ -18,19 +18,15 @@ public class Track {
         public void setNumber(String number) {this.number = number;}
         public void setStatus(int status) {this.status = status;}
 
-        public void stop()
-        {
-            if (status == 1)
-            {
+        public void stop() {
+            if (status == 1) {
                 System.out.println("Я прицеп, номер " + this.getNumber() + " остановился");
                 status = 0;
             } else
                 System.out.println("Я прицеп, номер " + this.getNumber() + " не могу остановиться, так как и так стою");
         }
-        public void roll()
-        {
-            if (status == 0)
-            {
+        public void roll() {
+            if (status == 0) {
                 System.out.println("Я прицеп, номер " + this.getNumber() + " качусь");
                 status = 1;
             } else
